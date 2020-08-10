@@ -1,0 +1,40 @@
+body,ol,h1,h2,h3,h4,h5,h6,fieldset,legend,table,td,blockquote,colgroup,form,ul,dl,dt,dd,thead,tfoot,tbody,p,caption,th{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+img{display:block;border:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+textarea{resize:none;}
+input,a{outline:none;}
+table{border-collapse:collapse;}
+body{font-size:12px;color:#333;}
+.l{float:left;}
+.r{float:right;}
+.c:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.c{
+    zoom:1;
+}
+.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.borderNo{
+    border:none !important;
+}
+.bgNo{
+    background:none !important;
+}
+.pointer{
+    cursor:pointer;
+}

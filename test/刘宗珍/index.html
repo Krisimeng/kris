@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .topwrap{
+            width:100%;
+            height:45px;
+            background:#f2f2f2;
+        }
+        .wrap{
+            width:1210px;
+            height:45px;
+            margin:0 auto;
+        }
+        .fir-ul{
+            float:left;
+        }
+        .fir-ul li{
+            float:left;
+            line-height:45px;
+            padding-left:9px;
+        }
+        .fir-ul .fir-li{
+            padding-left:0;
+        }
+        .fir-ul li a{
+            color:#666;
+            padding-right:10px;
+        }
+        .fir-ul .pinpai{
+            height:20px;
+            padding-left:6px;
+            border:1px solid #ccc;
+        }
+        .topwrap .wrap-r{
+            float:right;
+        }
+        .wrap-r li{
+            float:left;
+            line-height:45px;
+            padding-left:9px;
+        }
+        .wrap-r li b{
+            height:20px;
+            background:red;
+            color:white;
+            margin-right:6px;
+        }
+        .wrap-r li a{
+            color:#666;
+            padding-right:10px;
+        }
+        .wrap-r .sec-im1{
+            padding-left:24px;
+            background:url(./001.png) no-repeat;
+        }
+        .wrap-r .sec-im2{
+            padding-left:24px;
+            background:url(./002.png) no-repeat;
+        }
+        .main{
+            width:1210px;
+            margin:0 auto;
+            position:relative;
+        }
+        .maximgwrap{
+            width:350px;
+            height:440px;
+            float:left;
+        }
+        .box{
+            width:350px;
+            height:350px;
+            margin-top:10px;
+            position:absolute;
+            background:url(./j1.jpg)no-repeat;
+        }
+        .mask{
+            display:none;
+            background:rgba(0,0,0,0.5);;
+            width:100px;
+            height:100px;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        .maxmask{
+            display:none;
+            overflow:hidden;
+            width:540px;
+            height:540px;
+            position:absolute;
+            top:10px;
+            left:350px;
+            z-index:99;
+        }
+        .imgwrap{
+            width:350px;
+        }
+        .imgs{
+            position:absolute;
+        }
+        .imgul{
+            width:350px;
+            height:100px;
+            position:relative;
+            top:360px;
+            left:0px;
+        }
+        .imgul li{
+            float:left;
+            padding:30px 3px;
+        }
+        .con{
+            width:590px;
+            min-height:550px;
+            margin-top:10px;
+            margin-left:20px;
+            float:left;
+            /* background:red; */
+        }
+        .info{
+            width:590px;
+            min-height:440px;
+            border-bottom:1px dotted #ccc;
+        }
+        .info .tit{
+            padding:6px 10px;
+            font-size:16px;
+            color:#333;
+        }
+        .intro{
+            color:red;
+            padding:10px 10px;
+        }
+        .oth{
+            width:590px;
+            height:200px;
+        }
+        .price{
+            width:590px;
+            height:134px;
+            background:#f7f7f7;
+        }
+        .oth p{
+            padding:10px 9px;
+            height:100%;
+            float:left;
+            /* background:rebeccapurple; */
+        }
+        .pc-color{
+            width:520px;
+            margin-top:10px;
+            float:left;
+            /* background:purple; */
+        }
+        .pc-color li{
+            height:40px;
+            padding:5px 12px;
+            text-indent: 50px;
+            line-height:50px;
+            margin-right:6px;
+            margin-bottom:6px;
+            border:1px solid #333;
+            float:left;
+        }
+        .pc-color .ulli1{
+            background:#f7f7f7 url(./s1.jpg)no-repeat 10px 10px;
+            color:#666;  
+        }
+        .pc-color .ulli2{
+            background:#f7f7f7 url(./s2.jpg)no-repeat 10px 10px;
+            color:#666;  
+        }
+        .pc-color .ulli3{
+            background:#f7f7f7 url(./s3.jpg)no-repeat 10px 10px;
+            color:#666;  
+        }
+        .ptop{
+            width:590px;
+            height:32px;
+            background:#e4393c url(./shi.png)no-repeat;
+            text-indent:30px;
+        }
+        .ptop .pt-p1{
+            padding-right:8px;
+        }
+        .ptop .pt-p2{
+            background:url(./zhogn.png)no-repeat 0px 7px;
+            text-indent:24px;
+            padding-right:12px;
+        }
+        .pt-sp1{
+            color:#ffe134;
+            line-height:32px;
+        }
+        .ptop p{
+            float:right;
+            color:white;
+            line-height:32px;
+        }
+        .ptop .pt-num{
+            color:#ffe134;
+            background:url(./ren.png)no-repeat;
+            padding-right:3px;
+            padding-left:16px;
+        }
+        .ptop .pt-time{
+            color:#ffe134;
+            padding-left:8px;
+        }
+        .pprice{
+            padding:8px 6px;
+            color:#666;
+            float:left;
+            /* line-height:16px; */
+        }
+        .pri-price{
+            color:#e4393c;
+            font-size:24px;
+            line-height:30px;
+            float:left;
+        }
+        .pri-a{
+            color:#005ea7;
+            float:right;
+            cursor:pointer;
+            padding:6px 6px 0px 0px;
+        }
+        .cuxiao{
+            clear:both;
+            padding:6px 6px;
+        }
+        .cu-p1{
+            width:50px;
+            height:50px;
+            letter-spacing:4px;
+            /* text-align:justify; */
+            color:#666;
+            float:left;
+        }
+        .c-div div{
+            float:left;
+            margin-bottom:6px;
+        }
+        .c-t1{
+            border:1px solid red;
+            padding:0 3px;
+            color:red;
+            float:left;
+            /* margin-bottom:5px; */
+        }
+        .c-sp1{
+            padding-left:12px;
+            color:#333;
+        }
+        .c-t2{
+            border:1px solid red;
+            padding:0 3px;
+            color:red;
+            float:left; 
+        }
+        .c-sp2{
+            padding-left:6px;
+        }
+        .zenzhi{
+            height:36px;
+        }
+        .z-p1{
+            padding:6px;
+            float:left;
+        }
+        .z-p2{
+            /* padding:6px; */
+            margin:6px;
+            float:left;
+            width:140px;
+            height:16px;
+            border:1px solid #ced2e6;
+            border-radius:16px 16px 16px 16px;
+            background:url(./xun.png)no-repeat;
+            text-indent:24px;
+            color:#5e69ad;
+        }
+        .qqprice{
+            width:280px;
+            height:32px;
+            border:1px solid #333;
+            background:url(./qq.png)no-repeat;
+        }
+        .q-p1{
+            height:12px;
+            border-right:1px solid #ccc;
+            float:left;
+            text-indent:56px;
+            margin-top:12px;
+            line-height:10px;
+        }
+        .q-sp1{
+            padding-left:10px;
+            padding-right:10px;
+            color:#ff4200;
+            font-weight:bold;
+        }
+        .q-p2{
+            line-height:32px;
+            padding-left:12px;
+            float:left;
+        }
+        .q-sp2{
+            padding-left:12px;
+            color:#ff4200;
+            font-weight:bold;
+        }
+        .posi>p{
+            padding:6px;
+            float:left;
+        }
+        .po-p1{
+            /* width:172px; */
+            margin-top:6px;
+            padding:6px 6px 6px 6px;
+            line-height:12px;
+            height:10px;
+            border:1px solid #ccc;
+            float:left;
+        }
+        .po-sp1{
+            line-height:32px;
+            font-weight:bold;
+            padding-left:6px;
+        }
+        .po-zc{
+            padding-left:52px;
+            margin:6px 0;
+        }
+        .po-jd{
+            padding-left:52px;
+            margin-bottom:8px;
+        }
+        .po-wei{
+            padding-left:6px;
+            letter-spacing:4px;
+            float:left;
+        }
+        .pweight{
+            padding-left:6px;
+        }
+        .aside{
+            width:180px;
+            height:650px;
+            /* background:red; */
+            float:right;
+        }
+        .aside>p{
+            font-size:16px;
+            font-weight:bold;
+            text-align:center;
+            padding-top:12px;
+        }
+        .swrp{
+            overflow:hidden;
+            height:600px;
+        }
+        .showcomwrap{
+            overflow-y:scroll;
+            overflow-x:hidden;
+            height:600px;
+            width:180px;
+            text-align:center;
+            position:relative;
+            right:-18px;
+        }
+        .showcomwrap>div{
+            width:150px;
+            margin-left:15px;
+            height:200px;
+            /* background:red; */
+        }
+        .sh-p2{
+            color:#c81623;
+        }
+        .control{
+            position:relative;
+            left:80px;
+        }
+        .control>div{
+            float:left;
+            margin-right:12px;
+            cursor: pointer;
+        }
+        .green{
+            height:18px;
+            line-height:18px;
+            font-size:14px;
+            background:#08af37;
+            color:white;
+            float:left;
+            margin-top:3px;
+            padding:0 3px;
+            margin-right:6px;
+        }
+        .red{
+            height:18px;
+            line-height:18px;
+            font-size:14px;
+            background:red;
+            color:white;
+            float:left;
+            margin-top:3px;
+            padding:0 3px;
+            margin-right:6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topwrap">
+        <div class="wrap">
+            <ul class="fir-ul">
+                <li class="fir-li"><a href="">电脑、办公</a>&gt;</li>
+                <li><a href="">电脑整机</a>&gt;</li>
+                <li><a href="">笔记本</a>&gt;</li>
+                <li><a class="pinpai">联想（lenovo）∨</a>&gt;</li>
+                <li><a href="">联想小新Air14</a></li>
+            </ul>
+            <ul class="wrap-r">
+                <li><b>自营</b><a href="">联想京东自营旗舰店</a></li>
+                <li><a href="" class="sec-im1">联系客服</a></li>
+                <li><a href="" class="sec-im2">关注店铺</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="maximgwrap">
+            <div class="box">
+                <div class="mask"></div>
+            </div>
+            <div class="maxmask">
+                <img src="./m1.jpg" alt="" class="imgs">
+            </div>
+            <div class="imgwrap">
+                <ul class="imgul">
+                    <li><a href=""><img src="./left.jpg" alt=""></a></li>
+                    <li><img src="./01.jpg" alt=""></li>
+                    <li><img src="./02.jpg" alt=""></li>
+                    <li><img src="./03.jpg" alt=""></li>
+                    <li><a href=""><img src="./right.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <div class="info">
+                <p class="tit"><span class='green'>新品</span>联想（lenovo）小新Air14 2020锐龙版轻薄本 全面屏办公笔记本电脑（六核R5-4600U 16G 512G 高色域）深空灰</p>
+                <p class="intro">【爆款#8.1开门红优惠200，到手价4499】学生网课办公娱乐,游戏级标压处理器，低蓝光2.5K屏,100%sRGB高色域,PD快充</p>
+                <div class="price">
+                    <div class="ptop">
+                        <span class="pt-sp1">立即预约</span>
+                        <p class="pt-p2">预约剩余时间<span class="pt-time">9小时41分27秒</span></p>
+                        <p class="pt-p1"><span class="pt-num">5566</span>人预约</p>
+                    </div>
+                    <div class="prt">
+                        <p class="pprice">京东价</p><span class="pri-price">5699.00元</span>
+                        <p class="pri-a"><a>预约说明</a></p>
+                    </div>
+                    <div class="cuxiao">
+                        <p class="cu-p1">促 销</p>
+                        <div class="c-div">
+                            <div><p class="c-t1">换购</p><span class="c-sp1">购买一件可优惠换购热销商品 立即换购<a href="">&gt;&gt;</a></span></div>
+                            <div><p class="c-t2">满额返劵</p><span class="c-sp2">购笔记本整单满1000返金士顿内存50元优惠券 详情<a href="">&gt;&gt;</a></span></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="zenzhi">
+                    <p class="z-p1">增值业务</p>
+                    <p class="z-p2">高价回收，极速到账</p>
+                </div>
+                <div class="qqprice">
+                    <p class="q-p1">商城价<span class="q-sp1">￥5699</span></p>
+                    <p class="q-p2">淘宝价<span class="q-sp2">￥2698</span></p>
+                </div>
+                <div class="posi">
+                    <p>配送至</p>
+                    <div class="pooth">
+                        <p class="po-p1">广东省深圳市宝安区新安街道∨</p><span class="po-sp1">有货</span>
+                        <p class="po-zc">支持
+                        <a href="">京准达</a>
+                        <a href="">211限时达</a>
+                        <a href="">预约送货</a>
+                        <a href="">部分收货</a>
+                        <a href="">∨</a>
+                    </p>
+                    <p class="po-jd">由<span>京东</span>发货，并提供售后服务. 23：10前下单,预计明天（8月1日）送达</p>
+                    <p class="po-wei">重 量</p><span class="pweight">2.15kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="oth">
+                <p>选择颜色</p>
+                <ul class="pc-color">
+                    <li class="ulli1">
+                        Pro 2.5K全面屏|13.3英寸 标压R5
+                    </li>
+                    <li class="ulli2">
+                        Air 金属窄边框|14英寸 六核R5
+                    </li>
+                    <li class="ulli3">
+                        Pro 2.5K全面屏|13.3英寸 六核R5
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="aside">
+            <p>看了又看</p>
+            <div class="swrp">
+                <div class="showcomwrap">
+                    <div>
+                        <img src="./q1.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）鼠标</p>
+                        <p class="sh-p2">￥29.00</p>
+                    </div>
+                    <div>
+                        <img src="./q2.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）拯救者R70</p>
+                        <p class="sh-p2">￥5799.00</p>
+                    </div>
+                    <div>
+                        <img src="./q3.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q3.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q2.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q1.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q2.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q1.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                    <div>
+                        <img src="./q1.jpg" alt="">
+                        <p class="sh-p1">联想（lenovo）无线键</p>
+                        <p class="sh-p2">￥99.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="prev"><img src="./prev.png" alt=""></div>
+                <div class="next"><img src="./next.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+<script src="./utils.js"></script>
+<script>
+    // 变量声明
+    var box = document.querySelector('.box');
+    var mask = document.querySelector('.mask');
+    var maxmask = document.querySelector('.maxmask');
+    var maskImg = document.querySelector('.imgs');
+    var onimgs = document.querySelectorAll('.imgul li>img');
+    var oninfosli = document.querySelectorAll('.pc-color li');
+    var titc = document.querySelector('.tit');
+    var introc = document.querySelector('.intro');
+    var ptnum = document.querySelector('.pt-num');
+    var prices= document.querySelector('.pri-price');
+    var qpp1 = document.querySelector('.q-sp1');
+    var qpp2 = document.querySelector('.q-sp2');
+    var pwei = document.querySelector('.pweight');
+    var prev = document.querySelector('.prev');
+    var next = document.querySelector('.next');
+    var war = document.querySelector('.showcomwrap');
+    var pti = document.querySelector('.pt-time');
+    // console.log(qpp1);
+    // var titdc = document.querySelector('.titf');
+    //鼠标移入显示遮罩层和放大层
+    box.onmouseenter = function(){
+        mask.style.display='block';
+        maxmask.style.display='block';
+    }
+    box.onmouseleave=function(){
+        mask.style.display='none';
+        maxmask.style.display='none';
+    }
+    box.onmousemove = function(ev){
+        var e = ev || event;
+        //判断蒙版的位置，然后调整到对应的位置，在开始移动处理。
+        // console.log(box.parentNode.offsetLeft);
+        maskX = e.clientX - box.parentNode.parentNode.offsetLeft - parseInt(mask.offsetWidth/2);
+        maskY = e.clientY - box.parentNode.parentNode.offsetTop - parseInt(mask.offsetHeight/2);
+        //边界判断，
+        if(maskX<=0){
+            maskX=0;
+        }
+        if(maskX>=(box.clientWidth-mask.clientWidth)){
+            maskX=box.clientWidth-mask.clientWidth;
+        }
+        if(maskY<=0){
+            maskY=0;
+        }
+        if(maskY>=(box.clientHeight-mask.clientHeight)){
+            maskY=box.clientHeight-mask.clientHeight;
+        }
+        var scaleX = mask.offsetLeft/(box.offsetWidth - mask.offsetWidth);
+        var scaleY = mask.offsetTop/(box.offsetHeight - mask.offsetHeight);
+        mask.style.left=maskX+'px';
+        mask.style.top=maskY+'px';
+        maskImg.style.left=-scaleX*(maskImg.offsetWidth-maxmask.offsetWidth)+'px';
+        maskImg.style.top=-scaleY*(maskImg.offsetHeight-maxmask.offsetHeight)+'px';
+    }
+    // 
+    for(let i =0;i<onimgs.length;i++){
+        onimgs[i].onmouseenter = function(){
+            var imgsurl = `background:url(./j${i+1}.jpg)no-repeat`;
+            box.style.cssText=imgsurl;
+        }
+    }
+    for(let i=0;i<oninfosli.length;i++){
+        oninfosli[i].onclick=function(){
+            titc.innerHTML=json.tit[i];
+            introc.innerHTML=json.intro[i];
+            prices.innerHTML=json.price[i]+'元';
+            ptnum.innerHTML=json.num[i];
+            qpp1.innerText='￥'+json.tprice[i];
+            qpp2.innerText='￥'+json.tdprice[i];
+            pwei.innerHTML=json.weight[i]+'kg';
+        }
+    }
+    var json = {
+        "tit":["<span class='green'>新品</span>联想（lenovo）小新Air14 2020锐龙版轻薄本 全面屏办公笔记本电脑（六核R5-4600U 16G 512G 高色域）深空灰",
+        "联想(Lenovo)小新15 2020锐龙版轻薄本 全面屏办公笔记本电脑(6核R5-4600U 16G 512G 100%sRGB 高色域)银",
+        "<span class='red'>京东新品</span>联想(Lenovo)小新Pro13锐龙版 性能网课办公轻薄笔记本电脑(标压R5-3550H 16G 512G 人脸识别 100%sRGB)银"],
+        "intro":["【爆款#8.1开门红优惠200，到手价4499】学生网课办公娱乐,游戏级标压处理器，低蓝光2.5K屏,100%sRGB高色域,PD快充",
+        "【爆款#8.1开门红优惠200，到手价4499】学生网课办公娱乐,游戏级标压处理器，低蓝光2.5K屏,100%sRGB高色域,PD快充",
+        "【爆款#8.1开门红优惠200，到手价4499】学生网课办公娱乐,游戏级标压处理器，低蓝光2.5K屏,100%sRGB高色域,PD快充"],
+        "price":['5699.00','9999.00','19999.00'],
+        "num":[5566,5987,8666],
+        "weight":[2.15,2.23,2.45],
+        "tprice":[5699,7699,15699],
+        "tdprice":[2698,5987,8666]
+};
+prev.onclick=function(){
+    // 判断当前位置，如果有就有，没有就没有，
+    var nowp = war.scrollTop-600;
+    if(nowp<=-600){
+        war.scrollTop=1800;
+    }else{
+        war.scrollTop-=600;
+    }
+
+}
+next.onclick=function(){
+    var nowp = war.scrollTop+600;
+    if(nowp>=1800){
+        war.scrollTop=0;
+    }else{
+        war.scrollTop=nowp;
+    }
+}
+var arr=[9,41,27];
+setInterval(function(){
+    var ok1=arr[2]-1;
+    if(ok1<0){
+        arr[2]=59
+        ok2=arr[1]-1;
+        if(ok2<0){
+            arr[0]-=1;
+        }else{
+            arr[1]-=1;
+        }
+    }else{
+        arr[2]-=1;
+    }
+    pti.innerHTML = arr[0]+'小时'+arr[1]+'分'+arr[2]+'秒';
+    
+},1000);
+</script>
+</body>
+</html>

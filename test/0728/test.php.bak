@@ -1,0 +1,33 @@
+<?php
+header('Content-Type:text/html;charset=utf-8');
+$name = $_REQUEST['username'];
+$phone = $_REQUEST['phone'];
+$sex = $_REQUEST['sex'];
+$age = $_REQUEST['age'];
+
+//连接数据库，
+$link = mysqli_connect('localhost','root','root','test');
+    if(!$link){
+        die('连接失败,'. mysqli_connect_error());
+    }
+
+//设置编码字符集，
+mysqli_set_charset($link,'utf-8');
+// 编写修改sql语句
+// $sql_del="delete user ";
+$sql_upd = "update user set phone = '$phone' where name = '$name'";
+
+// 执行sql语句
+$res = mysqli_query($link,$sql_upd);
+// 判断执行结果
+if(!$res){
+    echo '{"error":0,"msg":"修改失败"}';
+    die();
+}
+echo '{"error":1,"msg":"修改成功"}';
+// 给前端返回特定格式的数据
+
+// 关闭连接
+mysqli_close($link);
+
+?>

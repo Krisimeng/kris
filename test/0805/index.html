@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>购物车</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wrap">
+            <div class="top">
+                <p class="mycart"><a href="./mycart.html">我的购物车</a></p>
+            </div>
+            <div class="curbos">
+                <p class="con">
+                    <span class="fir">首页</span><b class="gtfu">&gt;</b>
+                    <span class="fir">鞋子</span><b class="gtfu">&gt;</b>
+                    <span class="fir">男鞋</span>
+                </p>
+            </div>
+            <div class="goodlist">
+                
+               
+            </div>
+        </div>
+    </div>
+<script src="../jquery-3.4.1/jquery-3.4.1.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            url:'./js/goods.json',
+            type:'get',
+            dataType:'json',
+            success:function(jsonArr){
+                $.each(jsonArr,function(index,item){
+                    var goodDom = `
+                    <div class="good">
+                        <img src="${item.imgurl}" alt="">
+                        <p class="price">${item.price}</p>
+                        <p class="info">${item.title}</p>
+                        <p class="addto-mycart" code="${item.code}">
+                            加入购物车
+                        </p>
+                    </div>`;
+                    $('.goodlist').append(goodDom);
+                })
+            }
+
+        });
+        var goodArr = [];
+        $('.goodlist').on('click','.good .addto-mycart',function(){
+            
+            if(localStorage.getItem('goods')){
+                goodarr = JSON.parse(localStorage.getItem('goods'));
+            }
+            var flag = false;
+            var code = $(this).attr('code');
+            $.each(goodArr,function(index,item){
+                if(item.code===code){
+                    item.num++;
+                    flag=true;
+                    return false;
+                }
+            })
+            if(!flag){
+                goodArr.push({"code":code,"num":1});
+            }
+            localStorage.setItem('goods',JSON.stringify(goodArr));
+            alert('加入购物车成功');
+        });
+    })
+</script>
+</body>
+</html>

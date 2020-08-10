@@ -1,0 +1,145 @@
+.topwrap{
+    width:100%;
+    height:720px;
+    background:url(../img/0.jpg)no-repeat;
+}
+.topbox{
+    width:100%;
+    height:90px;
+    position:relative;
+    z-index:8;
+    background:linear-gradient(rgba(0,0,0,0.75) 30%,rgba(0,0,0,0.6) 50%, rgba(0,0,0,0));
+}
+.searchbar{
+    display:none;
+    width:100%;
+    height:90px;
+    background:#081322;
+    position:absolute;
+    top:0;
+    z-index:12;
+}
+.searchcon{
+    width:650px;
+    height:60px;
+    margin:30px auto;
+}
+.topmenu{
+    width:1358px;
+    height:90px;
+    margin:0 auto;
+}
+.logo{
+    width:168px;
+    height:60px;
+    padding-top:10px;
+    float:left;
+    position:relative;
+    left:-4px;
+}
+.topmenubar{
+    width:55%;
+    float:left;
+}
+.topmenubar>li{
+    float:left;
+    text-align:center;
+    width:20%;
+    height:90px;
+    margin-top:16px;
+}
+.topmenubar li p{
+    font-size:18px;
+    color:#fafafa;
+    line-height:28px;
+}
+.topmenubar li span{
+    font-size:12px;
+    line-height:19px;
+    color:#aeaeae;
+}
+.search{
+    width:20px;
+    height:20px;
+    padding:10px;
+    margin:18px 0 0 40px;
+    float:left;
+}
+.android{
+    float:left;
+    width:16px;
+    height:24px;
+    padding:6px;
+    margin:21px 0 0 12px;
+}
+.loginwrap{
+    width:310px;
+    height:90px;
+    float:right;
+    margin-right:10px;
+    background:red;
+}
+.loginwrap p{
+    font-size:16px;
+    line-height:80px;
+    color:#fefefe;
+    text-indent:9px;
+}
+.loginwrap a{
+    font-size:16px;
+    line-height:80px;
+    color:#fff3d0;
+}
+.login{
+    width:48px;
+    height:48px;
+    border-radius:48px;
+    margin-top:14px;
+    margin-left:28px;
+    overflow:hidden;
+    float:left;
+    background:url(../img/lo01.png)no-repeat;
+}
+.loginimgwrap{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    overflow:hidden;
+    background:url(../img/default.png)no-repeat;
+    background-size:cover;
+    position:relative;
+    float:left;
+    top:6px;
+    left:6px;
+}
+.submenu{
+    display:none;
+    margin-top:34px;
+}
+.submenu p{
+    height:29px;
+    /* line-height:90px; */
+}
+.submenu a{
+    color:#e1e1e1;
+    font-size:14px;
+}
+.submenu a:hover{
+    color:#c09951;
+}
+.closese{
+    float:left;
+}
+.searchval{
+    float:left;
+    background:#081322;
+    outline:none;
+    border:none;
+    width:400px;
+    color:#fff;
+    font-size:16px;
+    text-indent:6px;
+}
+.searchse{
+    float:right;
+}

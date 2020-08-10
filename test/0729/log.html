@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="box">
+    <p>账号：<input type="text" class="user"></p>
+    <p>密码：<input type="text" class="pass"></p>
+    <p>
+        <button class="login">登录</button>
+        <button class="rege">注册</button>
+    </p>
+</div>
+
+<script src="./utils.js"></script>
+<script>
+var user = $1('.user');
+var pass = $1('.pass');
+var login = $1('.login');
+var rege = $1('.rege');
+
+rege.onclick = function (){
+    if (!user.value || !pass.value) {
+        alert('账号或密码不能为空！');
+        return false;
+    }
+    ajax({
+        url:'./log.php',
+        type:'post',
+        data: {
+            type: 'rege',
+            user: user.value,
+            pass: pass.value
+        },
+        dataType: 'json',
+        success: function (data){
+            var json = JSON.parse(data);
+            alert(json.msg);
+        },
+        error: function (status){
+            alert('提交失败');
+        }
+    });
+}
+login.onclick=function(){
+    if(!user.value || !pass.value){
+        alert('账号或密码不能为空');
+        return false;
+    }
+    ajax({
+        url:'./log.php',
+        type:'post',
+        data:{
+            type:'login',
+            user:'user.value',
+            pass:'pass.value'
+        },
+        dataType:'json',
+        success:function(data){
+            var json = JSON.parse(data);
+            alert(json.msg);
+        },
+        error:function(status){
+            alert('提交失败');
+        }
+    });
+}
+// login.onclick = function (){
+//     if (!user.value || !pass.value) {
+//         alert('账号或密码不能为空！');
+//         return false;
+//     }
+//     ajax({
+//         url: './data/user.php',
+//         type: 'post',
+//         data: {
+//             type: 'login',
+//             user: user.value,
+//             pass: pass.value
+//         },
+//         dataType: 'json',
+//         success: function (data){
+//             var json = JSON.parse(data);
+//             alert(json.msg);
+//         },
+//         error: function (status){
+//             alert('提交失败');
+//         }
+//     });
+// }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./01.ico" />
+    <link rel="stylesheet" href="./reset.css">
+    <title>聊，我开心</title>
+    <style>
+        .box{
+            width:800px;
+            height:600px;
+            border:2px solid #ccc;
+            margin:100px auto;
+            border-radius:6px;
+            position:relative;
+            overflow:hidden;
+        }
+        .show{
+            width:800px;
+            height:400px;
+            overflow-y:auto;
+            overflow-x:hidden;
+        }
+        .con1{
+            /* 显示头像,位置是固定的， */
+            padding:12px;
+            position:relative;
+            float:right;
+            /* background:red; */
+            clear:both;
+        }
+        .con1 span{
+            font-size:16px;
+            border:2px solid greenyellow;
+            border-radius:6px;
+            padding:3px;
+        }
+        .con2{
+            position:relative;
+            left:12px;
+            font-size:16px;
+            color:#333;
+            margin-top:12px;
+            padding-bottom:12px;
+            clear:both;
+            
+            /* background:purple; */
+        }
+        .con2 span{
+            border:2px solid pink;
+            border-radius:6px;
+            padding:3px;
+        }
+        .inp{
+            width:800px;
+            height:200px;
+            margin:10px auto;
+            /* border-radius:6px; */
+            background:#eee;
+        }
+        .inp>textarea{
+            padding:2px 3px;
+            height:150px;
+            width:794px;
+            outline:none;
+            border:none;
+            background:none;
+            font-size:20px;
+            /* background:red; */
+        }
+        .sed{
+            width:100px;
+            height:30px;
+            background:seashell;
+            color:#666;
+            font-size:16px;
+            line-height:30px;
+            text-indent:30px;
+            position:absolute;
+            right:15px;
+            bottom:10px;
+            cursor:pointer;
+        }
+        .rest{
+            width:100px;
+            height:30px;
+            background:seashell;
+            color:#666;
+            font-size:16px;
+            line-height:30px;
+            text-indent:30px;
+            position:absolute;
+            right:125px;
+            bottom:10px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="show">
+            
+        </div>
+        
+        <div class="inp">
+            <textarea></textarea>
+            <div class="rest">
+                重置
+            </div>
+            <div class="sed">
+                发送
+            </div>
+        </div>
+    </div>
+
+<script>
+    // 元素添加就给一个固定的坐标，如果是窗口可大可小的时候，就不一定能行了，要适应布局，能获取到父元素的宽度，默认是左侧，只要控制你发送的内容。
+    var con = document.querySelector('textarea');
+    var rest = document.querySelector('.rest');
+    var sed = document.querySelector('.sed');
+    var show = document.querySelector('.show');
+    rest.onclick=function(){
+        con.value='';
+    }
+    sed.addEventListener('click',sendto);
+    function sendto(){
+        if(con.value===''){
+
+        }else{
+            show.innerHTML+=`<div class="con1"><span>${con.value}</span></div>`;
+            // 进行数据交互，首先创建交互对象
+            var xhr = new XMLHttpRequest();
+            // post传输数据
+            xhr.open('post','./test.php',true);
+            // 因为是post需要请求头
+            // xhr.setRequsetHeader('Content-type','application/x-www-from-urlencoded');
+            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            // 发送请求,发送的参数，这里就是需要添加你发送的内容了。
+            var mess = `mess=${con.value}`;
+            xhr.send(mess);
+            // 设置请求响应状态
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState===4){
+                    if(xhr.status>=200&&xhr.status<300){
+                        var data = xhr.responseText;
+                        var json = JSON.parse(data);
+                        show.innerHTML+=`<div class="con2"><span>${json[0].con2}</span></div>`;
+                    }else{
+                        console.log(xhr.status);
+                    }
+                }
+            }
+            con.value='';
+        }
+    }
+    
+    
+    
+</script>
+</body>
+</html>

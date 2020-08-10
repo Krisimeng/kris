@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    width: 600px;
+    margin: 50px auto 0;
+}
+.search{
+    width: 584px;
+    height: 34px;
+    font-size: 18px;
+    padding: 0 6px;
+}
+.list li{
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #ccc;
+}
+.list li:hover{
+    background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <input type="text" class="search">
+    <ul class="list">
+        <!-- <li>12306</li> -->
+        <!-- <li>12315</li> -->
+    </ul>
+</div>
+
+<script src="./utils.js"></script>
+<script>
+// 请求方式: get
+// url:	./data/baidu.php
+// 参数：   wd = 搜索关键字
+// return:	'{s:['数据1','数据2'.。。。]}'
+//          json字符串
+
+$1('.search').onkeyup = function (){
+
+    ajax({
+        url: './baidu.php',
+        type: 'get',
+        data: 'wd='+$1('.search').value,
+        dataType: 'json',
+        success: function (data){
+            var json = JSON.parse(data);
+            $1('.list').innerHTML = '';
+            json.s.forEach(function (item){
+                $1('.list').innerHTML += '<li>'+item+'</li>';
+            });
+        }
+    });
+
+
+
+
+}
+
+
+
+
+</script>
+    
+</body>
+</html>

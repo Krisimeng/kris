@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show{
+            width:200px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+<button class="btn">获取数据</button>
+<div class="show"></div>
+
+
+
+<script>
+var btn = document.querySelector('.btn');
+var show = document.querySelector('.show');
+btn.onclick = function(){
+    // 1.获取ajax对象，
+    var xhr = new XMLHttpRequest();
+    //2.
+    xhr.open('post','./da.json','true');
+    // 2.5设置请求头，模拟表单的post提交
+    // xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    //3. 发送请求。因为是get获取，所以不能传参。只能传null
+    xhr.send(null);
+    // 4.请求响应，判断状态。
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState===4){
+            if(xhr.status>=200&&xhr.status<300){
+                var json = JSON.parse(xhr.responseText);
+                json.forEach(item=>{
+                    show.innerHTML += `<p>${item.title}</p>`;
+                });
+                // show.innerText=xhr.responseXML;
+            }else{
+                console.log(xhr.status);
+            }  
+        }
+    }
+}
+
+
+</script>
+</body>
+</html>

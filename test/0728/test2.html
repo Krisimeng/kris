@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background:red;
+           position:absolute;
+        }
+        .totop{
+            width:500px;
+            height:20px;
+            background:green;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<!-- <div class="totop"></div> -->
+
+
+<script>
+//     var toto = document.querySelector('.totop');
+// // // console.log(255);
+// // var box = document.querySelector('.box');
+// function animate(dom,obj,callback){
+//     // console.log(125);
+//     for(var attr in obj){
+//         // console.log(125);
+//         if(attr==='opacity'){
+//             console.log(1);
+//             var current = parseInt(getComputedStyle(dom,null)[attr]*100);
+//             var target = obj[attr]*100;
+//         }else if(attr.indexOf('scroll') !==-1){
+//             // console.log(2);
+//             var current = dom[attr];
+//             var target = obj[attr];
+//         }else{
+//             // console.log(3);
+//             var current = parseInt(getComputedStyle(dom,null)[attr]);
+//             var target = obj[attr];
+//             // console.log(125);
+//         }
+//         obj[attr] = {
+//             'current':current,
+//             'target':target
+//         }
+//         // console.log(125);
+//     }
+//     clearInterval(dom.timer);
+//     dom.timer=setInterval(
+//      function(){
+//         for(var attr in obj){
+//             var current = obj[attr].current;
+//             var target = obj[attr].target;
+//             var speed = (target-current) / 10;
+//             speed=speed>0?Math.ceil(speed):Math.floor(speed);
+//             if(Math.abs(target-current)<=Math.abs(speed)){
+//                 if(attr==='opacity'){
+//                     dom.style[attr]=target/100;
+//                 }else if(attr.indexOf('scroll') !==-1){
+//                     dom[attr]=target;
+//                 }else{
+//                     dom.style[attr]=target+'px';
+//                 }
+//                 delete obj[attr];
+//                 for(var key in obj){
+//                     return;
+//                 }
+//                 clearInterval(dom.timer);
+//                 typeof callback ==='function'?callback():'';
+//             }else{
+//                 obj[attr].current+=speed;
+//                 if(attr==='opacity'){
+//                     dom.style[attr]=obj[attr].current/100;
+//                 }else if(attr.indexOf('scroll')!==-1){
+//                     dom[attr]=obj[attr].current;
+//                 }else{
+//                     dom.style[attr]=obj[attr].current+'px';
+//                 }
+//             }
+//         }
+//      },20);
+    
+// }
+// toto.onclick=function(){
+//     // alert(document.documentElement.scrollTop);
+//     animate(document.documentElement,{scrollTop:0});
+//     // animate(document.documentElment,{scrollTop:0});
+// }
+// animate(box,{width:500,height:500,background:'black',opacity:0.2});
+// console.log(125);
+// document.onclick=function(){
+//     // console.log(125);
+//     var attr={width:600,height:700};
+//     animate('box',attr,function(){
+//         console.log('完成');
+//     });
+// }
+//
+// class Dragto{
+//     constructor(doms){
+//         this.init(doms);
+//     }
+//     init(doms){
+//         this.box=doms;
+//         // console.log(this.box);
+//         // this.box=this.getNode(dom);
+//         // console.log(this.box);
+//         this.bindEvent();
+//         // console.log(this);
+//     }
+//     bindEvent(){
+//         this.box.onmousedown = function(ev){
+//             var e = ev || event;
+//             this.toleft = e.clientX - this.box.offsetLeft;
+//             this.totop = e.clientY - this.box.offsetTop;
+//             // console.log(this);
+//             this.moveto(e);
+//         }.bind(this);
+//         this.box.onmouseup = function(){
+//             document.onmousemove =null;
+//         }
+//     }
+//     moveto(e){
+//         // console.log(this);
+//         document.onmousemove = function(e){
+//             var l = e.clientX - this.toleft;
+//             var t = e.clientY - this.totop;
+//             // console.log(this);
+//             if(l<=0){
+//                 l=0;
+//             }else if(l>=document.documentElement.clientWidth-this.box.clientWidth){
+//                 l=document.documentElement.clientWidth - this.box.clientWidth;
+//             }
+//             if(t<=0){
+//                 t=0;
+//             }else if(t>=document.documentElement.clientHeight-this.box.clientHeight){
+//                 t=document.documentElement.clientHeight-this.box.clientHeigt;
+//             }
+//             this.box.style.left=l+'px';
+//             this.box.style.top=t+'px';
+//         }.bind(this);
+//     }
+// }
+// var box = document.querySelector('.box');
+// var jks = new Dragto(box);
+</script>
+</body>
+</html>
