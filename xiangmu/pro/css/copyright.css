@@ -1,0 +1,247 @@
+.allwrap{
+    width:100%;
+    height:1750px;
+    min-height:700px;
+    background:#d2d4d5;
+}
+.wrap{
+    width:982px;
+    height:100%;
+    /* background:red; */
+    margin:0 auto;
+    position:relative;
+    user-select:none;
+}
+
+.historywrap{
+    width:982px;
+    height:400px;
+    background:url(../img/the_man.png)no-repeat right bottom;
+    position:relative;
+}
+.histit{
+    font-size:26px;
+    line-height:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:#232323;
+}
+
+.fir,.sec{
+    font-size:14px;
+    margin-bottom:12px;
+    color:#626364;
+    line-height:20px;
+}
+.sec strong{
+    color:#555;
+    font-weight:bold;
+}
+.hiswhy{
+    width:148px;
+    height:44px;
+    background:#393939;
+    text-align:center;
+    float:right;
+    position:absolute;
+    bottom:60px;
+    left:0px;
+    cursor:pointer;
+}
+.hiswhy:hover span{
+    color:#d6b612;
+}
+.hiswhy span{
+    color:white;
+    font-size:16px;
+    line-height:44px;
+}
+.hiswhy2{
+    width:320px;
+    height:44px;
+    background:#393939;
+    text-align:center;
+    float:right;
+    position:absolute;
+    bottom:60px;
+    left:180px;
+    cursor:pointer;
+}
+.hiswhy2:hover span{
+    color:#d6b612;
+}
+.hiswhy2 span{
+    color:white;
+    font-size:16px;
+    line-height:44px;
+}
+/* imgshowwrap */
+.imgshowwrap{
+    width:982px;
+    height:580px;
+    margin-top:24px;
+}
+.imgtit{
+    font-size:24px;
+    color:#222;
+    line-height:60px;
+}
+.imgwrap{
+    width:100%;
+    height:480px;
+}
+.imgwrap>a{
+    display:block;
+    position:relative;
+}
+.imgmedbox1{
+    width:230px;
+    height:480px;
+    background:#fff;
+    margin-right:20px;
+}
+.imgmedbox2{
+    width:480px;
+    height:230px;
+    background:#fff;
+    margin-bottom:20px;
+}
+.imgminbox{
+    width:230px;
+    height:230px;
+    background:#fff;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.imgminboxt{
+    width:230px;
+    height:230px;
+    background:#fff;
+    margin-left:20px;
+}
+.imgmedbox1>img{
+    width:197px;
+    height:448px;
+    margin:16px 0 0 16px;
+}
+.imgmedbox2>img{
+    width:448px;
+    height:197px;
+    margin:16px 0 0 16px;
+}
+.imgminbox>img{
+    width:197px;
+    height:197px;
+    margin:16px 0 0 16px;
+}
+.imgminboxt>img{
+    width:197px;
+    height:197px;
+    margin:16px 0 0 16px;
+}
+.imgmedbox1 .show{
+    display:none;
+    width:230px;
+    height:480px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    background:url(../img/search.png)no-repeat center;
+}
+.imgmedbox2 .show{
+    display:none;
+    width:480px;
+    height:230px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(../img/search.png)no-repeat center;
+}
+.imgminbox .show{
+    display:none;
+    width:230px;
+    height:230px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(../img/search.png)no-repeat center;
+}
+.imgminboxt .show{
+    display:none;
+    width:230px;
+    height:230px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:url(../img/search.png)no-repeat center;
+}
+/* design */
+.design{
+    width:100%;
+    height:56px;
+}
+.designtit{
+    font-size:26px;
+    float:left;
+    color:#000;
+}
+.design:hover .designa{
+    color:#d8b339;
+}
+.designa{
+    width:236px;
+    height:44px;
+    float:right;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-indent:66px;
+    background:#393939 url(../img/configure_button_icon.png)no-repeat 20px 12px;
+    cursor:pointer;
+}
+
+
+/* showdetails */
+.showdetails{
+    width:100%;
+    height:232px;
+    /* background:red; */
+}
+.detit{
+    color:#000;
+    font-size:26px;
+    float:left;
+}
+.detit+a{
+    padding-left:20px;
+    line-height:40px;
+    color:#d8b339;
+}
+.detit+a:hover{
+    text-decoration:underline;
+}
+.details>div{
+    float:left;
+    width:310px;
+    height:182px;
+    position:relative;
+}
+.detalia{
+    display:none;
+    width:205px;
+    height:44px;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-indent:76px;
+    background:#393939 url(../img/configure_button_icon.png)no-repeat 30px 12px;
+    /* display:none; */
+    position:absolute;
+    top:71px;
+    left:50px;
+    cursor:pointer;
+}
+.detalia:hover{
+    color:#d8b339;
+}

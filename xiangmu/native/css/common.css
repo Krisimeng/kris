@@ -1,0 +1,161 @@
+/* ftips */
+.ftips{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    right:0;
+    background:url(../img/fwa_seal.png);
+    cursor:pointer;
+}
+.headtop{
+    width:100%;
+    height:200px;
+}
+/* logo */
+.logo{
+    float:left;
+    width:150px;
+    height:190px;
+    background:url(../img/logo.png)no-repeat center 0;
+    cursor:pointer;
+}
+/* nav */
+.nav{
+    width:715px;
+    height:89px;
+    float:right;
+    /* background:red; */
+}
+.nav li{
+    float:left;
+    height:89px;
+    text-align:center;
+    user-select:none;
+}
+.nav li a{
+    float:left;
+    width:100%;
+    height:89px;
+    font-size:15px;
+    color:#515151;
+    font-weight:400;
+    user-select:none;
+    line-height:128px;
+}
+::selection {
+    color: #fff;
+    background:rgb(246,131,42);
+}
+.nav-li1{
+    width:163px;
+    background:url(../img/main_nav_bg.png)no-repeat 0 0;
+}
+.nav-li2{
+    width:145px;
+    background:url(../img/main_nav_bg.png)no-repeat -163px 0;
+}
+.nav-li3{
+    width:173px;
+    background:url(../img/main_nav_bg.png)no-repeat -308px 0;
+}
+.nav-li4{
+    width:114px;
+    background:url(../img/main_nav_bg.png)no-repeat -481px 0;
+}
+.nav-li5{
+    width:120px;
+    background:url(../img/main_nav_bg.png)no-repeat -595px 0;
+}
+.login{
+    width:93px;
+    height:23px;
+    background:#dadcde;
+    position:absolute;
+    top:111px;
+    right:0px;
+    border:1px solid #e1e2e3;
+    text-align:center;
+}
+.login a{
+    float:left;
+    width:100%;
+    height:23px;
+    color:#515151;
+    line-height:23px;
+}
+.login:hover{
+    background:#e9e9e9;
+}
+.bottombox{
+    width:100%;
+    height:80px;
+    position:relative;
+}
+.bottombox>span{
+    font-size:12px;
+    line-height:80px;
+    color:#373737;
+    user-select:none;
+}
+.bottombox>span>strong{
+    color:#333;
+    font-weight:bold;
+    user-select:none;
+}
+.bottom-ul{
+    width:583px;
+    height:38px;
+    float:right;
+    position:absolute;
+    background:#fff;
+    top:15px;
+    right:0;
+}
+.bottom-ul>li{
+    margin-top:1px;
+    margin-right:1px;
+    float:left;
+    height:36px;
+    text-align:center;
+    background:#e7e9ea;
+    cursor:pointer;
+}
+.botul-li1{
+    width:93px;
+}
+.botul-li2{
+    width:151px;
+    border-left:1px solid #ccc;
+}
+.botul-li3{
+    width:64px;
+    border-left:1px solid #ccc;
+}
+.botul-li4{
+    width:65px;
+    border-left:1px solid #ccc;
+}
+.botul-li5{
+    width:200px;
+    border-left:1px solid #ccc;
+}
+.bottom-ul>li>a{
+    line-height:36px;
+    color:#373737;
+    font-size:14px;
+}
+.bottom-ul>b{
+    width:1px;
+    height:36px;
+    background:#ccc;
+    float:right;
+    user-select:none;
+}
+/* divide */
+.divide{
+    width:980px;
+    height:21px;
+    background:url(../img/Trenner_linie.png)no-repeat 0 6px,url(../img/Trenner.png)no-repeat 472px 0;
+    margin:15px 0;
+}

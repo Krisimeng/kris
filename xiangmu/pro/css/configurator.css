@@ -1,0 +1,1541 @@
+.allwrap{
+    width:100%;
+    height:2180px;
+    background:#d2d4d5;
+}
+.wrap{
+    width:982px;
+    height:100%;
+    /* background:red; */
+    margin:0 auto;
+    position:relative;
+}
+.moduleswrap{
+    width:982px;
+    height:630px;
+    user-select:none;
+    /* background:red; */
+}
+.module{
+    width:960px;
+    height:575px;
+    background:url(../img/bike/background.png)no-repeat;
+    position:relative;
+    top:55px;
+    left:-60px;
+    opacity:1;
+}
+.bkshadow{
+    width:960px;
+    height:70px;
+    overflow:hidden;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    opacity:1;
+    transition:opacity 1s;
+}
+.fwheelb{
+    width:325px;
+    height:322px;
+    position:absolute;
+    bottom:43px;
+    right:89px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.bwheelb{
+    width:330px;
+    height:325px;
+    position:absolute;
+    bottom:44px;
+    left:60px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.fwheela{
+    width:309px;
+    height:306px;
+    position:absolute;
+    bottom:52px;
+    right:98px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.bwheela{
+    width:314px;
+    height:310px;
+    position:absolute;
+    bottom:51px;
+    left:67px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.vorne{
+    width:275px;
+    height:274px;
+    position:absolute;
+    bottom:68px;
+    right:115px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.hinten{
+    width:275px;
+    height:274px;
+    position:absolute;
+    bottom:71px;
+    left:85px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.handerbar{
+    width:164px;
+    height:163px;
+    position:absolute;
+    top:29px;
+    right:240px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.stem{
+    width:76px;
+    height:100px;
+    position:absolute;
+    top:103px;
+    right:304px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.saddle{
+    width:133px;
+    height:44px;
+    position:absolute;
+    top:40px;
+    left:250px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.saddlebar{
+    width:133px;
+    height:44px;
+    position:absolute;
+    top:71px;
+    left:299px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.crank{
+    width:269px;
+    height:150px;
+    position:absolute;
+    bottom:107px;
+    left:205px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.chain{
+    width:267px;
+    height:93px;
+    position:absolute;
+    bottom:131px;
+    left:201px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.bikebody{
+    width:511px;
+    height:274px;
+    position:absolute;
+    bottom:173px;
+    left:207px;
+    opacity:1;
+    transition:opacity 1s;
+    /* animation:none; */
+}
+.pedals{
+    width:118px;
+    height:195px;
+    position:absolute;
+    bottom:80px;
+    left:376px;
+    opacity:1;
+    transition:opacity 1s;
+}
+.grab{
+    text-align:center;
+    width:57px;
+    height:60px;
+    background:url(../img/grab_bg.png)no-repeat center;
+    cursor:pointer;
+}
+.grab span{
+    font-size:36px;
+    color:#d3b23f;
+    cursor:pointer;
+}
+.fwheelbbox{
+    width:325px;
+    height:322px;
+    position:absolute;
+    bottom:43px;
+    right:89px;
+    z-index:3;
+    cursor:pointer;
+}
+.bwheelbbox{
+    width:330px;
+    height:325px;
+    position:absolute;
+    bottom:44px;
+    left:60px;
+    z-index:3;
+    cursor:pointer;
+}
+.fwheelabox{
+    width:309px;
+    height:306px;
+    position:absolute;
+    bottom:52px;
+    right:98px;
+    z-index:4;
+    cursor:pointer;
+}
+.bwheelabox{
+    width:314px;
+    height:310px;
+    position:absolute;
+    bottom:51px;
+    left:67px;
+    z-index:4;
+    cursor:pointer;
+}
+.vornebox{
+    width:275px;
+    height:274px;
+    position:absolute;
+    bottom:68px;
+    right:115px;
+    z-index:3;
+}
+.hintenbox{
+    width:275px;
+    height:274px;
+    position:absolute;
+    bottom:71px;
+    left:85px;
+    z-index:3;
+}
+.handerbarbox{
+    width:185px;
+    height:100px;
+    position:absolute;
+    top:97px;
+    right:130px;
+    z-index:4;
+    cursor:pointer;
+}
+.stembox{
+    width:60px;
+    height:100px;
+    position:absolute;
+    top:102px;
+    right:318px;
+    z-index:5;
+    cursor:pointer;
+    
+}
+.saddlebox{
+    width:133px;
+    height:44px;
+    position:absolute;
+    top:40px;
+    left:250px;
+    z-index:3;
+    cursor:pointer;
+    
+}
+.saddlebarbox{
+    width:40px;
+    height:60px;
+    position:absolute;
+    top:84px;
+    left:311px;
+    z-index:4;
+    cursor:pointer;
+    
+}
+.crankbox{
+    width:269px;
+    height:150px;
+    position:absolute;
+    bottom:107px;
+    left:205px;
+    z-index:4;
+    cursor:pointer;
+    
+}
+.chainbox{
+    width:267px;
+    height:93px;
+    position:absolute;
+    bottom:131px;
+    left:201px;
+    z-index:5;
+    cursor:pointer;
+}
+.pedalsbox{
+    width:118px;
+    height:195px;
+    position:absolute;
+    bottom:80px;
+    left:376px;
+    z-index:3;
+    cursor:pointer;
+   
+}
+.bikebodybox{
+    width:305px;
+    height:154px;
+    position:absolute;
+    bottom:277px;
+    left:328px;
+    z-index:6;
+    cursor:pointer;
+}
+.colorcircle{
+    width:0px;
+    height:0px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:15;
+    background:red;
+    border-radius:50%;
+    transition:opacity 1s;
+    opacity:0;
+}
+.grab-handerbar{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:44px;
+    right:257px;
+    z-index:10;
+    cursor:pointer;
+}
+.grab-fwheela{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:175px;
+    right:200px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(5deg);
+}
+.grab-fwheelb{
+    width:57px;
+    height:60px;
+    position:absolute;
+    bottom:44px;
+    right:355px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(215deg);
+}
+.grab-bwheela{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:206px;
+    left:96px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(-25deg);
+}
+.grab-bwheelb{
+    width:57px;
+    height:60px;
+    position:absolute;
+    bottom:32px;
+    left:88px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(-140deg);
+}
+.grab-bikebody{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:92px;
+    left:455px;
+    z-index:10;
+    cursor:pointer;
+    /* transform:rotate(0deg); */
+}
+.grab-pedals{
+    width:57px;
+    height:60px;
+    position:absolute;
+    bottom:38px;
+    left:446px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(180deg);
+}
+.grab-stem{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:55px;
+    left:560px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(-15deg);
+}
+.grab-saddlebar{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:85px;
+    left:270px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(-110deg);
+}
+
+.grab-saddle{
+    width:57px;
+    height:60px;
+    position:absolute;
+    top:-3px;
+    left:268px;
+    z-index:10;
+    cursor:pointer;
+}
+.grab-chain{
+    width:57px;
+    height:60px;
+    position:absolute;
+    bottom:216px;
+    left:296px;
+    z-index:10;
+    cursor:pointer;
+}
+.grab-crank{
+    width:57px;
+    height:60px;
+    position:absolute;
+    bottom:143px;
+    left:462px;
+    z-index:10;
+    cursor:pointer;
+    transform:rotate(90deg);
+}
+.black:hover{
+    transform:scale(1.2);
+}
+.gray:hover{
+    transform:scale(1.2);
+}
+.brown:hover{
+    transform:scale(1.2);
+}
+.red:hover{
+    transform:scale(1.2);
+}
+.white:hover{
+    transform:scale(1.2);
+}
+.green:hover{
+    transform:scale(1.2);
+}
+.yellow:hover{
+    transform:scale(1.2);
+}
+.gold:hover{
+    transform:scale(1.2);
+}
+.purple:hover{
+    transform:scale(1.2);
+}
+.blue:hover{
+    transform:scale(1.2);
+}
+.skyblue:hover{
+    transform:scale(1.2);
+}
+.black>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#333;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.black{
+    width:40px;
+    height:40px;
+    background:#6a6a6a;
+    border:1px solid #373737;
+    border-radius:50%;
+}
+.gray>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#888;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.gray{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#a5a5a5;
+    border:1px solid #6a6a6a;
+}
+.brown>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#533008;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.brown{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#7e664a;
+    border:1px solid #472f14;
+}
+.white>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#fff;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.white{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#ededed;
+    border:1px solid #d0d0d0;
+}
+.red>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#b31221;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.red{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#c44854;
+    border:1px solid #80101b;
+}
+.green>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#0d6c3a;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.green{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#529672;
+    border:1px solid #1e5b3c;
+}
+.purple>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#771872;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.purple{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#995195;
+    border:1px solid #581755;
+}
+.yellow>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#f9e827;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.yellow{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#f7eb62;
+    border:1px solid #cbbe34;
+}
+.gold>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#a08c61;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.gold{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#b3a588;
+    border:1px solid #7c6f54;
+}
+.blue>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#005187;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.blue{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#477ea2;
+    border:1px solid #174b6f;
+}
+.skyblue>div{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#89c8e1;
+    position:relative;
+    top:1px;
+    left:1px;
+    overflow:hidden;
+}
+.skyblue{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#a8d4e6;
+    border:1px solid #5c8393;
+}
+.color-saddlebar{
+    display:none;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:absolute;
+    top:50px;
+    left:253px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-saddlebar .black{
+    position:absolute;
+    top:40px;
+    left:15px;
+}
+.color-saddlebar .gray{
+    position:absolute;
+    top:40px;
+    right:15px;
+}
+.color-pedals{
+    display:none;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:absolute;
+    bottom:10px;
+    left:410px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-pedals .black{
+    position:absolute;
+    top:40px;
+    left:15px;
+}
+.color-pedals .gray{
+    position:absolute;
+    top:40px;
+    right:15px;
+}
+.color-crank{
+    display:none;
+    width:124px;
+    height:124px;
+    border-radius:50%;
+    position:absolute;
+    bottom:108px;
+    left:418px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-crank .gray{
+    position:absolute;
+    top:42px;
+    left:12px;
+}
+.color-crank .black{
+    position:absolute;
+    top:15px;
+    right:25px;
+}
+.color-crank .gold{
+    position:absolute;
+    bottom:15px;
+    right:25px;
+}
+.color-stem{
+     display:none;
+     width:124px;
+     height:124px;
+     border-radius:50%;
+     position:absolute;
+     top:20px;
+     left:525px;
+     z-index:15;
+     background:rgba(255,255,255,0.8);
+     transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-stem .gray{
+    position:absolute;
+    top:42px;
+    left:12px;
+}
+.color-stem .black{
+    position:absolute;
+    top:15px;
+    right:25px;
+}
+.color-stem .white{
+    position:absolute;
+    bottom:15px;
+    right:25px;
+}
+.color-fwheelb{
+    display:none;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    position:absolute;
+    bottom:20px;
+    left:495px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-fwheelb .blue{
+    position:absolute;
+    top:53px;
+    left:10px;
+}
+.color-fwheelb .yellow{
+    position:absolute;
+    top:14px;
+    left:40px;
+}
+.color-fwheelb .white{
+    position:absolute;
+    top:29px;
+    left:88px;
+}
+.color-fwheelb .black{
+    position:absolute;
+    bottom:30px;
+    right:21px;
+}
+.color-fwheelb .red{
+    position:absolute;
+    bottom:15px;
+    left:40px;
+}
+.color-bwheelb{
+    display:none;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    position:absolute;
+    bottom:20px;
+    left:65px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-bwheelb .blue{
+    position:absolute;
+    top:53px;
+    left:10px;
+}
+.color-bwheelb .yellow{
+    position:absolute;
+    top:14px;
+    left:40px;
+}
+.color-bwheelb .white{
+    position:absolute;
+    top:29px;
+    left:88px;
+}
+.color-bwheelb .black{
+    position:absolute;
+    bottom:30px;
+    right:21px;
+}
+.color-bwheelb .red{
+    position:absolute;
+    bottom:15px;
+    left:40px;
+}
+.color-chain{
+    display:none;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    position:absolute;
+    bottom:160px;
+    left:236px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-chain .white{
+    position:absolute;
+    top:22px;
+    left:31px;
+}
+.color-chain .black{
+    position:absolute;
+    top:11px;
+    left:80px;
+}
+.color-chain .blue{
+    position:absolute;
+    top:41px;
+    left:118px;
+}
+.color-chain .yellow{
+    position:absolute;
+    top:91px;
+    left:118px;
+}
+.color-chain .red{
+    position:absolute;
+    top:124px;
+    left:80px;
+}
+.color-chain .gold{
+    position:absolute;
+    top:112px;
+    left:31px;
+}
+.color-chain .gray{
+    position:absolute;
+    top:67px;
+    left:10px;
+}
+.color-fwheela{
+    display:none;
+    width:226px;
+    height:226px;
+    border-radius:50%;
+    position:absolute;
+    bottom:265px;
+    left:612px;
+    z-index:15;
+    opacity:0;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-fwheela .gray{
+    position:absolute;
+    top:91px;
+    left:10px;
+}
+.color-fwheela .blue{
+    position:absolute;
+    top:44px;
+    left:26px;
+}
+.color-fwheela .yellow{
+    position:absolute;
+    top:14px;
+    left:66px;
+}
+.color-fwheela .gold{
+    position:absolute;
+    top:14px;
+    left:116px;
+}
+.color-fwheela .brown{
+    position:absolute;
+    top:44px;
+    left:157px;
+}
+.color-fwheela .purple{
+    position:absolute;
+    top:91px;
+    left:172px;
+}
+.color-fwheela .white{
+    position:absolute;
+    top:139px;
+    left:166px;
+}
+.color-fwheela .green{
+    position:absolute;
+    top:168px;
+    left:118px;
+}
+.color-fwheela .red{
+    position:absolute;
+    top:168px;
+    left:66px;
+}
+.color-fwheela .black{
+    position:absolute;
+    top:139px;
+    left:26px;
+}
+.color-bwheela{
+    display:none;
+    width:226px;
+    height:226px;
+    border-radius:50%;
+    position:absolute;
+    bottom:240px;
+    left:20px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.3s;
+    transform:scale(0) rotate(0deg);
+}
+.color-bwheela .gray{
+    position:absolute;
+    top:91px;
+    left:10px;
+}
+.color-bwheela .blue{
+    position:absolute;
+    top:44px;
+    left:26px;
+}
+.color-bwheela .yellow{
+    position:absolute;
+    top:14px;
+    left:66px;
+}
+.color-bwheela .gold{
+    position:absolute;
+    top:14px;
+    left:116px;
+}
+.color-bwheela .brown{
+    position:absolute;
+    top:44px;
+    left:157px;
+}
+.color-bwheela .purple{
+    position:absolute;
+    top:91px;
+    left:172px;
+}
+.color-bwheela .white{
+    position:absolute;
+    top:139px;
+    left:166px;
+}
+.color-bwheela .green{
+    position:absolute;
+    top:168px;
+    left:118px;
+}
+.color-bwheela .red{
+    position:absolute;
+    top:168px;
+    left:66px;
+}
+.color-bwheela .black{
+    position:absolute;
+    top:139px;
+    left:26px;
+}
+.color-bikebody{
+    display:none;
+    width:226px;
+    height:226px;
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:370px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+    transition:all 0.75s;
+    transform:scale(0) rotate(0deg);
+}
+.color-bikebody .gray{
+    position:absolute;
+    top:91px;
+    left:10px;
+}
+.color-bikebody .blue{
+    position:absolute;
+    top:44px;
+    left:26px;
+}
+.color-bikebody .yellow{
+    position:absolute;
+    top:14px;
+    left:66px;
+}
+.color-bikebody .gold{
+    position:absolute;
+    top:14px;
+    left:116px;
+}
+.color-bikebody .brown{
+    position:absolute;
+    top:44px;
+    left:157px;
+}
+.color-bikebody .purple{
+    position:absolute;
+    top:91px;
+    left:172px;
+}
+.color-bikebody .white{
+    position:absolute;
+    top:139px;
+    left:166px;
+}
+.color-bikebody .green{
+    position:absolute;
+    top:168px;
+    left:118px;
+}
+.color-bikebody .red{
+    position:absolute;
+    top:168px;
+    left:66px;
+}
+.color-bikebody .black{
+    position:absolute;
+    top:139px;
+    left:26px;
+}
+.color-saddle{
+    display:none;
+    width:555px;
+    height:150px;
+    border:5px solid #fff;
+    position:absolute;
+    top:0;
+    left:220px;
+    z-index:15;
+    background:rgba(255,255,255,0.8);
+}
+.modulesaddleimg{
+    width:555px;
+    height:93px;
+    background:rgba(0,0,0,0.6);
+}
+.modulesaddleimg div{
+    width:110px;
+    height:75px;
+    overflow:hidden;
+    margin-top:5px;
+    margin-left:5px;
+    float:left;
+}
+.modulesaddleimg div img{
+    transition:opacity 1s;
+    opacity:1;
+}
+.modline{
+    display:none;
+    margin-left:8px;
+    width:540px;
+    height:56px;
+    border-top:1px dotted #ccc;
+    position:relative;
+    z-index:20;
+    position:relative;
+}
+.modline span{
+    font-size:16px;
+    line-height:56px;
+    color:#fff;
+}
+.modsadbox1{
+    display:none;
+}
+.modsadbox2{
+    display:none;
+}
+.modsadbox1 .black{
+    position: absolute;
+    top:8px;
+    left:132px;
+}
+.modsadbox1 .brown{
+    position: absolute;
+    top:8px;
+    left:182px;
+}
+.modsadbox1 .white{
+    position: absolute;
+    top:8px;
+    left:232px;
+}
+.modsadbox2 .black{
+    position: absolute;
+    top:8px;
+    left:132px;
+}
+.modsadbox2 .brown{
+    position: absolute;
+    top:8px;
+    left:182px;
+}
+.modsadbox2 .white{
+    position: absolute;
+    top:8px;
+    left:232px;
+}
+.modsadbox2 .blue{
+    position: absolute;
+    top:8px;
+    left:282px;
+}
+.modsadbox2 .purple{
+    position: absolute;
+    top:8px;
+    left:332px;
+}
+.modsadbox2 .red{
+    position: absolute;
+    top:8px;
+    left:382px;
+}
+.modsadbox2 .skyblue{
+    position: absolute;
+    top:8px;
+    left:432px;
+}
+.modsadbox2 .yellow{
+    position: absolute;
+    top:8px;
+    left:482px;
+}
+.color-handerbar{
+    display:none;
+    width:368px;
+    height:236px;
+    position:absolute;
+    top:0px;
+    left:240px;
+    z-index:15;
+    border:5px solid #fff;
+    background:rgba(255,255,255,0.8);
+}
+.bikehanbox{
+    width:368px;
+    height:178px;
+    background:rgba(0,0,0,0.6);
+}
+.bikehanbox div{
+    float:left;
+    margin:8px 0 0 8px;
+    width:112px;
+    height:77px;
+    background:white;
+    overflow:hidden;
+}
+.bikehanbox div img{
+    opacity:1;
+}
+.bikecon{
+    display:none;
+    margin-left:8px;
+    width:352px;
+    height:56px;
+    border-top:1px dotted #ccc;
+    position:relative;
+}
+.bikecon span{
+    font-size:16px;
+    line-height:56px;
+    color:#fff;
+}
+.bikehancolor1{
+    display:none;
+}
+.bikehancolor2{
+    display:none;
+}
+.bikehancolor1 .black{
+    position:absolute;
+    top:8px;
+    left:123px;
+}
+.bikehancolor1 .gray{
+    position:absolute;
+    top:8px;
+    left:173px;
+}
+.bikehancolor2>div{
+    position:absolute;
+    top:8px;
+}
+.bikehancolor2 .white{
+    left:123px;
+}
+.bikehancolor2 .blue{
+    left:173px;
+}
+.bikehancolor2 .black{
+    left:223px;
+}
+.bikehancolor2 .gray{
+    left:273px;
+}
+.swiperbox{
+    width:145px;
+    height:37px;
+    /* background:red; */
+    position:absolute;
+    top:40px;
+    left:10px;
+    cursor:pointer;
+}
+.addcir{
+    width:29px;
+    height:29px;
+    border-radius:50%;
+    background:#fff;
+    font-size:32px;
+    font-weight:400;
+    color:#c7a631;
+    line-height:24px;
+    text-align:center;
+    user-select: none;
+    margin-top:6px;
+    float:left;
+}
+.staticoff{
+    width:47px;
+    height:29px;
+    background:#b6b9ba;
+    border:1px solid #ededed;
+    color:#fff;
+    font-size:14px;
+    font-weight:400;
+    text-align:center;
+    line-height:28px;
+    position:absolute;
+    user-select: none;
+    top:5px;
+    right:48px;
+    z-index:3;
+}
+.staticon{
+    width:47px;
+    height:29px;
+    background:#e3b829;
+    border:1px solid #ededed;
+    color:#fff;
+    font-size:14px;
+    text-align:center;
+    line-height:28px;
+    font-weight:400;
+    position:absolute;
+    user-select: none;
+    top:5px;
+    right:0px;
+    z-index:3;
+}
+.swiper{
+    width:46px;
+    height:31px;
+    background-image:linear-gradient(#ffffff,#e7e9eb);
+    border:1px solid #f3f4f4;
+    color:#c4c4c4;
+    font-size:14px;
+    text-align:center;
+    font-weight:400;
+    line-height:30px;
+    user-select: none;
+    position:absolute;
+    top:4px;
+    right:48px;
+    z-index:5;
+}
+.sharebox{
+    width:330px;
+    height:44px;
+    border:1px solid #efeff0;
+    background:#e9eaeb;
+    position:absolute;
+    top:194px;
+    right:240px;
+    cursor:pointer;
+}
+.sharebox span{
+    font-size:10px;
+    color:#373737;
+    line-height:44px;
+    padding-left:12px;
+    user-select: none;
+}
+.sharebox span:hover{
+    color:#ccab37;
+}
+.sharebox img{
+    position:absolute;
+    right:12px;
+    top:12px;
+}
+.fixedopera{
+    width:210px;
+    height:390px;
+    position:fixed;
+    top:220px;
+    right:460px;
+    /* background:rgba(255,255,255,0.8); */
+    z-index:99;
+}
+.operatop{
+    width:208px;
+    height:44px;
+    border:1px solid black;
+    border-bottom:1px dotted #cacaca;
+    background:#444;
+}
+.toptip{
+    font-size:10px;
+    width:110px;
+    height:16px;
+    border-bottom:1px dotted #605e5e;
+    float:right;
+    margin-right:12px;
+    margin-top:20px;
+    color:#aaa;
+    user-select: none;
+    cursor:pointer;
+}
+.toptip:hover{
+    color:#fff;
+}
+.operabody{
+    width:208px;
+    height:344px;
+    background:rgba(255,255,255,0.6);
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+.operabody>div{
+    cursor:pointer;
+    width:178px;
+    height:26px;
+    border-top:1px dotted #fff;
+    border-bottom:1px dotted #cacaca;
+    margin-left:15px;
+}
+.operabody>div>img{
+    margin-top:6px;
+    margin-right:12px;
+    float:left;
+}
+.operabody>div>input{
+    float:left;
+    margin-top:6px;
+    margin-right:14px;
+}
+.operabody>div>span{
+    line-height:26px;
+    font-size:14px;
+    float:left;
+    user-select: none;
+}
+.operabody>div>label{
+    line-height:26px;
+    font-size:14px;
+    float:left;
+    user-select: none;
+}
+.operabody>div>span:hover{
+    color:#ccab37;
+}
+.operabody>div>label:hover{
+    color:#ccab37;
+    cursor:pointer;
+}
+.infotit{
+    width:100%;
+    height:120px;
+    /* background:red; */
+}
+.infotit>span{
+    font-size:28px;
+    line-height:100px;
+    color:#373737;
+}
+.infotit p{
+    float:right;
+    margin-right:60px;
+    margin-top:10px;
+    line-height:120px;
+    font-size:14px;
+    color:#000;
+    user-select:none;
+}
+.infotit p>a{
+    color:#ba961b;
+    cursor:pointer;
+    user-select:none;
+}
+.wrap hr{
+    width:100%;
+}
+.bikecontent{
+    width:100%;
+    height:1030px;
+}
+.conttit{
+    font-size:20px;
+    color:#000;
+    line-height:80px;
+}
+.qus1,.qus2,.qus3,.qus4{
+    font-size:14px;
+    color:#626364;
+    line-height:48px;
+    font-weight:bold;
+}
+.bikecontent b{
+    font-size:14px;
+    font-weight:400;
+    color:#626364;
+    font-weight:bold;
+}
+.ans1,.ans2,.ans3{
+    font-size:14px;
+    line-height:24px;
+    color:#555;
+}
+.ans4>p{
+    font-size:14px;
+    line-height:24px;
+    color:#555;
+    padding:0px 0 12px 0;   
+}
+.diebike{
+    width:320px;
+    height:44px;
+    background:#393939;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-align:center;
+    cursor:pointer;
+    margin-bottom:18px;
+    user-select:none;
+}
+.diebike:hover{
+    color:#ba961b;
+}
+.bikedata{
+    font-size:24px;
+    color:#000;
+    line-height:80px;
+}
+.bikeinfomation{
+    width:100%;
+    height:61px;
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.p1,.p3{
+    width:244px;
+    height:30px;
+    background:#f6f6f6;
+    color:#000;
+    font-size:14px;
+    text-indent:24px;
+    line-height:30px;
+    float:left;
+}
+.p2,.p4{
+    width:737px;
+    height:30px;
+    background:#c2c3c4;
+    font-size:14px;
+    text-indent:24px;
+    line-height:30px;
+    float:right;
+}
+.p1{
+    border-bottom:1px solid #c2c3c4;
+}
+.p2{
+    border-bottom:1px solid #fff;
+}

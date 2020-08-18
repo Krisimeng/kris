@@ -1,0 +1,214 @@
+.allwrap{
+    width:100%;
+    height:1075px;
+    min-height:700px;
+    background:#d2d4d5;
+}
+.wrap{
+    width:982px;
+    height:100%;
+    /* background:red; */
+    margin:0 auto;
+    user-select:none;
+    position:relative;
+}
+/* loginwrap */
+.loginwrap{
+    width:982px;
+    height:410px;
+}
+.logintit{
+    font-size:26px;
+    color:#393939;
+    line-height:60px;
+    margin-top:20px;
+}
+.loginfowrap{
+    width:460px;
+    height:265px;
+    border:1px solid #fff;
+    float:left;
+    box-shadow:0px 0px 10px #393939;
+    background:linear-gradient(#f5f6f6,#f6f7f7);
+    position:relative;
+}
+.loginformwrap{
+    width:460px;
+    height:265px;
+    border:1px solid #fff;
+    float:right;
+    box-shadow:0px 0px 10px #393939;
+    background:linear-gradient(#fafbfc 10%,#f6f7f7);
+    position:relative;
+}
+.infotit{
+    color:#626364;
+    height:42px;
+    font-size:18px;
+    text-indent:24px;
+    line-height:60px;
+    user-select:none;
+}
+.logintipwrap{
+    margin-left:24px;
+    border-top:1px solid #d3b23f;
+    width:414px;
+    height:164px;
+}
+.logintipwrap>p{
+    margin-top:27px;
+    font-size:13px;
+    color:#626364;
+}
+.infobtn{
+    width:246px;
+    height:44px;
+    background:#393939;
+    color:#fff;
+    font-size:18px;
+    text-align:center;
+    line-height:44px;
+    cursor:pointer;
+    position:absolute;
+    bottom:15px;
+    right:24px;
+    user-select:none;
+}
+.inrobtn:hover{
+    color:#d3b23f;
+}
+
+.formtit{
+    color:#626364;
+    height:42px;
+    font-size:18px;
+    text-indent:24px;
+    line-height:60px;
+    user-select:none;
+}
+.loginbox{
+    width:414px;
+    height:212px;
+    margin-left:24px;
+    border-top:1px solid #d3b23f;
+}
+.logintip{
+    line-height:60px;
+    font-size:13px;
+}
+.email{
+    font-size:13px;
+    color:#222;
+    display:block;
+    float:left;
+    width:193px;
+    height:16px;
+    margin-bottom:5px;
+}
+.pwd{
+    font-size:13px;
+    color:#222;
+    display:block;
+    float:left;
+    margin-left:24px;
+    margin-bottom:5px;
+}
+#emailipt,#pwdipt{
+    width:191px;
+    height:33px;
+    border:1px solid #bcbebf;
+    box-shadow:0px 0px 5px #ccc inset;
+    font-size:18px;
+    text-indent:3px;
+}
+.pwdhelp{
+    width:173px;
+    height:44px;
+    background:linear-gradient(to bottom , #fefefe 30%, #ebeeef);
+    color:#454647;
+    font-size:15px;
+    line-height:44px;
+    text-align:center;
+    border:1px solid #dfdfdf;
+    box-shadow:0px 0px 3px #ccc;
+    cursor:pointer;
+    float:left;
+    position:absolute;
+    left:24px;
+    bottom:20px;
+}
+.pwdhelp:hover{
+    background:linear-gradient(to bottom , #ebeeef 30%, #fefefe);
+}
+.loginbtn{
+    width:160px;
+    height:44px;
+    background:#393939;
+    color:#fff;
+    font-size:18px;
+    text-align:center;
+    line-height:44px;
+    cursor:pointer;
+    float:right;
+    position:absolute;
+    right:24px;
+    bottom:20px;
+    user-select:none;
+}
+.loginbtntip{
+    font-size:12px;
+    color:#d3b23f;
+    position:absolute;
+    right:24px;
+    bottom:79px;
+    user-select:none;
+}
+.loginbtn:hover{
+    color:#d3b23f;
+}
+#pwdipt{
+    margin-left:16px;
+}
+/* showdetails */
+.showdetails{
+    width:100%;
+    height:232px;
+    /* background:red; */
+}
+.detit{
+    color:#000;
+    font-size:26px;
+    float:left;
+}
+.detit+a{
+    padding-left:20px;
+    line-height:40px;
+    color:#d8b339;
+}
+.detit+a:hover{
+    text-decoration:underline;
+}
+.details>div{
+    float:left;
+    width:310px;
+    height:182px;
+    position:relative;
+}
+.detalia{
+    display:none;
+    width:205px;
+    height:44px;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-indent:76px;
+    background:#393939 url(../img/configure_button_icon.png)no-repeat 30px 12px;
+    /* display:none; */
+    position:absolute;
+    top:71px;
+    left:50px;
+    cursor:pointer;
+}
+.detalia:hover{
+    color:#d8b339;
+}

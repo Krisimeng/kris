@@ -1,0 +1,14 @@
+$('.details').on('mouseover','.mubiao',function(){
+    $(this).children().eq(1).css('display','block');
+});
+$('.details').on('mouseout','.mubiao',function(){
+    $(this).children().eq(1).css('display','none');
+});
+$('.imgwrap').on('mouseenter','a',function(){
+    $(this).children().eq(0).css("opacity",0.6);
+    $(this).children().eq(1).css("display","block");
+});
+$('.imgwrap').on('mouseleave','a',function(){
+    $(this).children().eq(0).css("opacity",1);
+    $(this).children().eq(1).css("display","none");
+});
